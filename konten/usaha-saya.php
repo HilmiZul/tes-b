@@ -14,7 +14,8 @@
   <!-- Earnings (Monthly) Card Example -->
   <?php
   $q = mysqli_query($konek, "select a.*, b.* from tb_usaha a 
-                            inner join tb_users b on a.uid=b.uid");
+                            inner join tb_users b on a.uid=b.uid
+                            where a.uid=".$_SESSION['id']."");
   while ($data = mysqli_fetch_array($q)) {
   ?>
   <div class="col-xl-3 col-md-6 mb-4">

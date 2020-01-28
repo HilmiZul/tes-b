@@ -17,7 +17,9 @@
 
   <?php if (!empty($_SESSION['id'])) { ?>
 
-    <?php include("konten/sidebar.html"); ?>
+    <?php 
+      // include("konten/sidebar.html"); 
+      ?>
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -36,7 +38,10 @@
       </div>
       <!-- End of Main Content -->
 
-      <?php include("konten/footer.html"); ?>
+      <?php 
+      // include("konten/footer.html"); 
+      include("konten/bottom-nav.html"); 
+      ?>
 
     </div>
     <!-- End of Content Wrapper -->
